@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="logo">
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="odin logo">
+                Odin
+            </div>
+            <div class="credit">
+                Photo by <a href="https://unsplash.com/@joshuaearle">Joshua Earle</a> 
+                on <a href="https://unsplash.com/photos/AZzfPBQA1Bk">Unsplash</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="intro">
+                <p class="intro-1">This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="sign-up-form">
+                <div>Let's do this!</div>
+                <form action="" method="get" id="form">
+                    <div class="form-row">
+                        <label for="first-name">FIRST NAME *</label>
+                        <input type="text" name="first-name" id="first-name" 
+                        required>
+                    </div>
+                    <div class="form-row">
+                        <label for="last-name">LAST NAME *</label>
+                        <input type="text" name="last-name" id="last-name" 
+                        required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">EMAIL *</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">PASSWORD *</label>
+                        <input type="password" name="password" id="password" 
+                        minlength="8" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="psw-confirm">CONFIRM PASSWORD *</label>
+                        <input type="password" name="password" id="psw-confirm" 
+                        minlength="8" required>
+                    </div>
+                </form>
+            </div>
+            <div class="submit">
+                <button type="submit" form="form">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
